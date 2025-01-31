@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medialab AI Tools Hub</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <script>
+        // Check if user is authenticated
+        if (!sessionStorage.getItem('authenticated')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <nav class="nav-global">
+        <div class="nav-left">
+            <img src="images/medialab-logo.png" alt="Medialab Logo" class="nav-logo">
+            <a href="index.html" class="nav-title">Tools Index</a>
+            <div class="search-form">
+                <input type="search" class="nav-search" placeholder="Search all AI tools...">
+                <button class="nav-button">Search</button>
+            </div>
+        </div>
+        <div class="nav-links">
+            {{navigation}}
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Medialab AI Tools Hub</h1>
+        <p>Your gateway to AI-powered marketing solutions</p>
+    </div>
+
+    <div class="container">
+        <section class="tools-grid">
+            <div class="tool-card">
+                <h3>Digital Setup Wizard</h3>
+                <p>AI-powered assistant for flawless Meta campaign setup and optimization. Get step-by-step guidance and best practices.</p>
+                <a href="1_1_Digital_Setup_Wizard.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Marketing Effectiveness Bot</h3>
+                <p>Analyze campaign performance and get AI-driven insights for optimization and improvement.</p>
+                <a href="1_2_MarketingEffectiveness_Bot.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Channel 4 Insider</h3>
+                <p>Your AI-powered expert for Channel 4 media opportunities and insights. Get tailored recommendations and up-to-date information.</p>
+                <a href="1_3_Channel4_Insider.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>HR FAQ Bot</h3>
+                <p>Your AI-powered guide for HR policies, line management, and company benefits. Get instant answers aligned with Medialab's policies.</p>
+                <a href="1_4_HR_FAQ_Bot.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Print Delivery Manager</h3>
+                <p>AI-powered assistant for flawless print insert delivery scheduling. Automate and streamline your print delivery workflow.</p>
+                <a href="2_1_Print_Delivery_Manager.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Finance Sheet Converter</h3>
+                <p>AI-powered tool for standardizing and converting financial documents. Transform complex spreadsheets into consistent formats.</p>
+                <a href="2_2_Finance_Sheet_Converter.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Weekly Report Chatbot</h3>
+                <p>AI-powered assistant for generating and analyzing weekly performance reports. Streamline your reporting workflow with automated insights.</p>
+                <a href="2_3_Weekly_Report_Chatbot.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Janus Helpdesk</h3>
+                <p>AI-powered assistant for IT support and system access. Get instant help with technical issues and access requests.</p>
+                <a href="2_4_Janus_Helpdesk.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Planning Assistant</h3>
+                <p>Your AI-powered guide through Medialab's planning framework. Get strategic guidance, resources, and insights at every step.</p>
+                <a href="3_1_Planning_Assistant.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Pitch Bank</h3>
+                <p>Your AI-powered assistant for efficient pitch content management and retrieval. Access and organize pitch materials, case studies, and strategic insights.</p>
+                <a href="3_2_Pitch_Bank.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Medialab Comms Assistant</h3>
+                <p>Your AI-powered guide for consistent, impactful communications. Ensure all company communications embody our values and maintain consistent messaging.</p>
+                <a href="3_3_Medialab_Comms_Assistant.html" class="tool-link">Learn More</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>Recruitment Assistant</h3>
+                <p>AI-powered support for streamlining the hiring process. Get help with job descriptions, candidate screening, and interview preparation.</p>
+                <a href="3_4_Recruitment_Assistant.html" class="tool-link">Learn More</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 

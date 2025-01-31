@@ -1,0 +1,49 @@
+2. Plan to Refactor the Codebase into React
+
+Below is a step-by-step proposal for migrating the existing HTML-based system into a React application. The aim is to create a more dynamic, maintainable, and scalable front-end:
+
+Set Up the React Project
+
+Use a standard tool such as Create React App, Vite, or a preferred bundler to initialise the project.
+Organise directories for components, pages, and assets (images, CSS).
+Convert Each HTML Page into a React Component
+
+For each chatbot page (e.g. 1_1_Digital_Setup_Wizard.html), create a corresponding React component (e.g. DigitalSetupWizard.jsx).
+Copy the relevant HTML content into JSX, adjusting attributes (e.g. class becomes className) and removing inline scripts in favour of React-friendly code.
+Create Shared Layout Components
+
+Layout / Navigation: Build a Navbar component to handle top-level navigation links, branding, and search.
+Hero / CTA / Footer: Reuse these sections across all chatbot pages, making them separate, reusable components in a components folder.
+Implement React Router
+
+Install React Router (or your preferred routing library) to manage different pages.
+Create routes that map to each chatbot’s component (e.g. /digital-setup, /hr-faq, /finance-sheet-converter, etc.).
+A default route (e.g. /) would display the main Tools Hub.
+Handle Styling
+
+Move existing CSS (e.g. from global.css) into a suitable arrangement for React. You could either:
+Keep it as a single global stylesheet imported into the project’s root (index.js or App.js).
+Break it up into smaller stylesheets or use CSS Modules / styled-components for more modular styling.
+Integrate Dynamic Content (If Needed)
+
+If some chatbot content is stored in .json files or a content management system, fetch or import that data into your components.
+Consider creating a small configuration file for each chatbot’s data (title, description, CTA link) if you want to avoid hard-coding these details.
+Refactor Search Functionality
+
+Instead of a static script, create a dedicated Search component that indexes or filters content.
+If you plan to preserve the existing search index approach, replicate it in React and store the results in State.
+Provide a results page or dropdown suggestions in real time.
+Testing and Validation
+
+Use React’s recommended testing libraries (e.g. Jest / React Testing Library) to confirm that each component renders properly.
+Manually check navigation, ensuring each chatbot page is reachable via React Router.
+Optimisation
+
+Bundle your static files with your chosen build tool.
+Deploy your React build output to your current server environment or a hosting service (e.g. Netlify, Vercel, AWS).
+Deployment and Handover
+
+Replace or supplement the existing server.js (if using Node/Express) to serve the React app’s static build.
+Verify that direct URLs (e.g. yourdomain.com/digital-setup) correctly serve the relevant page.
+Retire old .html files once the React-based version is stable.
+By following these steps, Medialab can transition from a collection of static HTML pages to a centralised React application. This refactor will make the chatbots easier to maintain, update, and scale, and will also modernise the user experience with smoother navigation and potential for richer features.
