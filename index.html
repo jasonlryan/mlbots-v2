@@ -4,211 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medialab AI Tools Hub</title>
-    <style>
-        :root {
-            --primary-color: #0052CC;
-            --secondary-color: #253858;
-            --accent-color: #36B37E;
-            --bg-light: #F4F5F7;
-            --text-color: #172B4D;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        .hero {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .tool-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .tool-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .tool-card h3 {
-            color: var(--primary-color);
-            margin-top: 0;
-        }
-
-        .tool-card p {
-            margin-bottom: 1.5rem;
-        }
-
-        .tool-link {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .coming-soon {
-            opacity: 0.7;
-            position: relative;
-        }
-
-        .coming-soon::after {
-            content: 'Coming Soon';
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: var(--secondary-color);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-
-        .nav-global {
-            background: var(--secondary-color);
-            padding: 1rem 2rem;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-left {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .search-container {
-            position: relative;
-            max-width: 300px;
-            width: 100%;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: 0.5rem 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        .search-input::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .search-input:focus {
-            outline: none;
-            background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        #search-results {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            border-radius: 4px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-top: 0.5rem;
-            max-height: 400px;
-            overflow-y: auto;
-            display: none;
-            z-index: 1000;
-        }
-
-        .search-result-item {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--bg-light);
-            color: var(--text-color);
-            cursor: pointer;
-        }
-
-        .search-result-item:hover {
-            background: var(--bg-light);
-        }
-
-        .search-result-item h4 {
-            margin: 0 0 0.25rem 0;
-            color: var(--primary-color);
-        }
-
-        .search-result-item p {
-            margin: 0;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .nav-global a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        .nav-global a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .nav-search {
-            padding: 8px 12px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 14px;
-        }
-
-        .nav-search::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .nav-search:focus {
-            outline: none;
-            background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.4);
-        }
-    </style>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
     <nav class="nav-global">
@@ -243,28 +39,16 @@
                 <a href="1_2_MarketingEffectiveness_Bot.html" class="tool-link">Learn More</a>
             </div>
 
-            <div class="tool-card coming-soon">
-                <h3>Creative Analysis Tool</h3>
-                <p>AI-powered creative performance analysis and optimization recommendations.</p>
-                <a href="#" class="tool-link">Coming Soon</a>
+            <div class="tool-card">
+                <h3>Channel 4 Insider</h3>
+                <p>Your AI-powered expert for Channel 4 media opportunities and insights. Get tailored recommendations and up-to-date information.</p>
+                <a href="1_3_Channel4_Insider.html" class="tool-link">Learn More</a>
             </div>
 
-            <div class="tool-card coming-soon">
-                <h3>Budget Optimizer</h3>
-                <p>Smart budget allocation and optimization across campaigns and platforms.</p>
-                <a href="#" class="tool-link">Coming Soon</a>
-            </div>
-
-            <div class="tool-card coming-soon">
-                <h3>Audience Insights</h3>
-                <p>Deep dive into audience behavior and targeting recommendations.</p>
-                <a href="#" class="tool-link">Coming Soon</a>
-            </div>
-
-            <div class="tool-card coming-soon">
-                <h3>Report Generator</h3>
-                <p>Automated campaign reporting with AI-driven insights and recommendations.</p>
-                <a href="#" class="tool-link">Coming Soon</a>
+            <div class="tool-card">
+                <h3>HR FAQ Bot</h3>
+                <p>Your AI-powered guide for HR policies, line management, and company benefits. Get instant answers aligned with Medialab's policies.</p>
+                <a href="1_4_HR_FAQ_Bot.html" class="tool-link">Learn More</a>
             </div>
         </section>
     </div>
