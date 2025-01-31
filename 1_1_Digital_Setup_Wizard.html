@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Setup Wizard - Medialab</title>
+    <style>
+        :root {
+            --primary-color: #0052CC;
+            --secondary-color: #253858;
+            --accent-color: #36B37E;
+            --bg-light: #F4F5F7;
+            --text-color: #172B4D;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .cta-section {
+            background-color: var(--bg-light);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .metrics {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .metrics h2 {
+            color: var(--secondary-color);
+        }
+
+        .contact {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .nav-global {
+            background: var(--secondary-color);
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-global a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-global a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav-separator {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-button {
+            height: 36px;
+            padding: 0 1rem;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .search-button:hover {
+            background: #2d9669;
+        }
+
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 300px;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-top: 0.5rem;
+            z-index: 1000;
+        }
+
+        .search-result-item {
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .search-result-item:hover {
+            background-color: var(--bg-light);
+        }
+
+        .nav-search {
+            padding: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            width: 200px;
+            margin-right: 8px;
+        }
+
+        .nav-button {
+            padding: 8px 16px;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+            display: inline-block;  /* Make sure button is visible */
+            margin-left: 8px;
+        }
+
+        .nav-button:hover {
+            background: #2d9669;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-global">
+        <div class="nav-left">
+            <a href="index.html">Medialab AI Tools Hub</a>
+            <input type="search" 
+                   class="nav-search" 
+                   placeholder="Search all AI tools..."
+                   style="width: 300px; margin-left: 20px;">
+        </div>
+        <div class="nav-links">
+            <a href="1_2_MarketingEffectiveness_Bot.html">Next →</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Digital Setup Wizard</h1>
+        <p>Your AI-powered assistant for flawless Meta campaign setup and optimization</p>
+    </div>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Transform Your Campaign Setup Process</h2>
+            <p>The Digital Setup Wizard is your dedicated AI assistant, designed specifically for Medialab's Meta advertising workflows. It streamlines campaign setup, ensures best practices, and provides instant support when you need it most.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Expert Campaign Guidance</h3>
+                <ul>
+                    <li>Step-by-step setup instructions</li>
+                    <li>Best practice recommendations</li>
+                    <li>Real-time troubleshooting</li>
+                    <li>Budget allocation support</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Quality Assurance</h3>
+                <ul>
+                    <li>Campaign structure verification</li>
+                    <li>Medialab QA checklist integration</li>
+                    <li>Budget tracking reminders</li>
+                    <li>Policy compliance checks</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Technical Support</h3>
+                <ul>
+                    <li>Meta Pixel configuration</li>
+                    <li>Conversions API setup</li>
+                    <li>Targeting strategy optimization</li>
+                    <li>Creative best practices</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <h2>Driving Results</h2>
+            <p>The Digital Setup Wizard is designed to improve:</p>
+            <ul>
+                <li>Campaign setup efficiency</li>
+                <li>Error reduction in campaign launches</li>
+                <li>Time savings for junior and mid-level staff</li>
+                <li>Consistency in campaign structure and optimization</li>
+            </ul>
+        </section>
+
+        <section class="cta-section">
+            <h2>Start Using the Digital Setup Wizard Today</h2>
+            <p>Available now for all Medialab team members</p>
+            <a href="https://chatgpt.com/g/g-173vPRLuF-digital-campaign-wizard/" class="cta-button">Access the Wizard</a>
+        </section>
+
+        <section class="contact">
+            <h2>Support Team</h2>
+            <p>For feedback or questions, contact:</p>
+            <p>Charles Batchelor, Krishan Majithia, Adelphi Eden, Aneena Morshed, or Adam Hughes</p>
+        </section>
+    </div>
+
+    <script>
+        console.log('Script loaded');
+
+        const searchForm = document.getElementById('searchForm');
+        console.log('Search form found:', searchForm);
+
+        const searchInput = document.getElementById('searchInput');
+        console.log('Search input found:', searchInput);
+
+        const searchResults = document.getElementById('searchResults');
+        console.log('Search results found:', searchResults);
+
+        if (searchForm) {
+            searchForm.addEventListener('submit', (e) => {
+                console.log('Form submitted');
+                e.preventDefault();
+                const searchTerm = searchInput.value;
+                
+                // Show the results visibly on the page
+                searchResults.style.display = 'block';
+                searchResults.innerHTML = `
+                    <div class="search-result-item">
+                        <p>You searched for: "${searchTerm}"</p>
+                    </div>
+                `;
+                
+                console.log('Search submitted:', searchTerm);
+            });
+        } else {
+            console.error('Search form not found!');
+        }
+
+        // Add Enter key handler explicitly
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (e) => {
+                console.log('Key pressed:', e.key);
+                if (e.key === 'Enter') {
+                    console.log('Enter pressed');
+                    e.preventDefault();
+                    searchForm.dispatchEvent(new Event('submit'));
+                }
+            });
+        } else {
+            console.error('Search input not found!');
+        }
+    </script>
+</body>
+</html>

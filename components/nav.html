@@ -1,0 +1,45 @@
+<nav class="nav-global">
+    <div class="nav-left">
+        <a href="index.html">Medialab AI Tools Hub</a>
+        <input type="search" class="nav-search" placeholder="Search all AI tools...">
+    </div>
+    <div class="nav-links">
+        <!-- Will be empty on index, show prev/next on pages -->
+        {{navigation}}
+    </div>
+</nav>
+
+<style>
+.nav-global {
+    background: var(--secondary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-search {
+    width: 300px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+</style> 
