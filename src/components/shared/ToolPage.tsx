@@ -61,31 +61,33 @@ export function ToolPage({
           ))}
         </section>
 
-        <section className="metrics">
-          <h2>{metrics.title}</h2>
-          <p>{metrics.description}</p>
-          <ul>
-            {metrics.items.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </section>
+        <div className="benefits-cta-container">
+          <section className="metrics">
+            <h2>{metrics.title}</h2>
+            <p>{metrics.description}</p>
+            <ul>
+              {metrics.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </section>
 
-        <section className="cta-section">
-          {cta.beta && (
-            <div className="beta-tag">Currently in Testing Phase</div>
-          )}
-          <h2>{cta.title}</h2>
-          <p>{cta.description}</p>
-          <a
-            href={cta.buttonLink}
-            className="cta-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {cta.buttonText}
-          </a>
-        </section>
+          <section className="cta-section">
+            {cta.beta && (
+              <div className="beta-tag">Currently in Testing Phase</div>
+            )}
+            <h2>{cta.title}</h2>
+            <p>{cta.description}</p>
+            <a
+              href={cta.buttonLink}
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {cta.buttonText}
+            </a>
+          </section>
+        </div>
 
         {supportTeam && (
           <section className="contact">

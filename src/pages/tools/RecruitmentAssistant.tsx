@@ -56,7 +56,13 @@ export function RecruitmentAssistant() {
         buttonLink:
           "https://chatgpt.com/g/g-673f5e0490948191a1019f39b9425626-recruitment-assistant-sam-copy",
       }}
-      supportTeam={["HR Team", "Charles Batchelor", "Talent Acquisition Leads"]}
+      supportTeam={[
+        "James Ashton",
+        "Jonny Harrie",
+        "Koren Bower",
+        "Sam Clutterbuck",
+        "Alex Kirk",
+      ]}
     />
   );
 }

@@ -23,7 +23,6 @@ export function Login() {
   return (
     <div className="login-container">
       <h1>Medialab AI Tools</h1>
-      <p>Please enter the password to access the tools hub.</p>
       <form className="login-form" onSubmit={handleSubmit}>
         <input
           type="password"

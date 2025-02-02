@@ -57,9 +57,11 @@ export function MedialabCommsAssistant() {
           "https://chatgpt.com/g/g-673611302c588190b6de270123f33cd3-medialab-comms-bot",
       }}
       supportTeam={[
-        "Communications Team",
-        "Charles Batchelor",
-        "Brand Managers",
+        "Aidan King",
+        "Cerys Hayes",
+        "Henry Brown",
+        "Cheyanne Joni Morris",
+        "Ben",
       ]}
     />
   );

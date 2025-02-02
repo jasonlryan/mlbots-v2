@@ -57,9 +57,12 @@ export function PlanningAssistant() {
           "https://chatgpt.com/g/g-6735f92c63fc8190b61098a7afc0c26d-planning-assistant",
       }}
       supportTeam={[
-        "Strategy Team",
-        "Charles Batchelor",
-        "Senior Planning Leads",
+        "Jess Talbot",
+        "Mattie Mould",
+        "Alexandre Gavela",
+        "George Gwilliam",
+        "Jack Allen",
+        "Harry Darlington",
       ]}
     />
   );

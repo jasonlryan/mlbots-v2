@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./hooks/useAuth";
 import { useAuth } from "./hooks/useAuth";
-import { Layout } from "./components/layout/Layout";
+import { Layout } from "./components/Layout";
 import { Login } from "./pages/Login";
 import { Home } from "./pages/Home";
 import { DigitalSetupWizard } from "./pages/tools/DigitalSetupWizard";

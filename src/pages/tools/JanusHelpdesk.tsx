@@ -55,11 +55,7 @@ export function JanusHelpdesk() {
         buttonText: "Contact Helpdesk",
         buttonLink: "https://chatgpt.com/g/g-mLDzclrP5-janus-helpdesk",
       }}
-      supportTeam={[
-        "IT Support Team",
-        "Charles Batchelor",
-        "System Administrators",
-      ]}
+      supportTeam={["Richard Wallace", "David Tsang", "Charles Batchelor"]}
     />
   );
 }
