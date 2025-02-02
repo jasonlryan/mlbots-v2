@@ -483,48 +483,40 @@ a:hover {
   width: 100%;
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   background: white;
   color: var(--text-color);
   transition: all 0.2s ease;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .login-form input[type="password"]::placeholder {
+  color: #6B778C;
   text-align: center;
+  opacity: 1;
 }
 
-.login-form input[type="password"]:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.login-form button {
-  width: auto;
-  min-width: 200px;
-  padding: 1rem 2rem;
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 1rem 1.5rem;
   font-size: 1.1rem;
   background: var(--primary-color);
   color: white;
   border: none;
   border-radius: 8px;
-  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
-  margin: 0 auto;
+  font-weight: 500;
 }
 
-.login-form button:hover {
+.login-form button[type="submit"]:hover {
   background: #007acc;
-  transform: translateY(-2px);
 }
 
 .error-message {
   color: #dc3545;
-  font-size: 1rem;
   margin-top: 1rem;
-  text-align: center;
-  width: 100%;
+  font-size: 0.9rem;
 } 
