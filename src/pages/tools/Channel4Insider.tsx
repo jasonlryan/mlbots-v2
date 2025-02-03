@@ -53,7 +53,7 @@ export function Channel4Insider() {
         title: "Start Using the Channel 4 Insider Today",
         description: "Available now for all Medialab team members",
         buttonText: "Access the Insider",
-        buttonLink: "https://chatgpt.com/g/g-vfXGVlnpb-channel4-insider",
+        buttonLink: "https://chatgpt.com/g/g-lVG99vF8Y-channel-4-insider",
       }}
       supportTeam={[
         "Steve Parker",

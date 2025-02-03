@@ -53,7 +53,8 @@ export function MarketingEffectivenessBot() {
         title: "Start Using the Marketing Effectiveness Bot Today",
         description: "Available now for all Medialab team members",
         buttonText: "Access the Bot",
-        buttonLink: "https://chatgpt.com/g/g-vfXGVlnpb-marketing-effectiveness",
+        buttonLink:
+          "https://chatgpt.com/g/g-W3e3GCTZx-marketing-effectiveness-resource-bot",
       }}
       supportTeam={[
         "Joe Slade",

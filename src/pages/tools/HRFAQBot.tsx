@@ -53,7 +53,7 @@ export function HRFAQBot() {
         title: "Start Using the HR FAQ Bot Today",
         description: "Available now for all Medialab team members",
         buttonText: "Access the Bot",
-        buttonLink: "https://chatgpt.com/g/g-vfXGVlnpb-hr-faq-bot",
+        buttonLink: "https://chatgpt.com/g/g-9FL8tVaan-hr-faq-bot",
       }}
       supportTeam={["Daisy Hall", "Harry Darlington", "Ant Stonehewer"]}
     />

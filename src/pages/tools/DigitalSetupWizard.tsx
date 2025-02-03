@@ -53,7 +53,7 @@ export function DigitalSetupWizard() {
         title: "Start Using the Digital Setup Wizard Today",
         description: "Available now for all Medialab team members",
         buttonText: "Access the Wizard",
-        buttonLink: "https://chatgpt.com/g/g-vfXGVlnpb-digital-setup-wizard",
+        buttonLink: "https://chatgpt.com/g/g-173vPRLuF-digital-campaign-wizard",
       }}
       supportTeam={[
         "Charles Batchelor",
