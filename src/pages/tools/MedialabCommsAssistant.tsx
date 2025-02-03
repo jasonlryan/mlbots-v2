@@ -4,63 +4,62 @@ export function MedialabCommsAssistant() {
   return (
     <ToolPage
       title="Medialab Comms Assistant"
-      subtitle="Your AI-powered guide for consistent, impactful communications"
+      subtitle="Your AI-powered assistant for internal and external communications"
       intro={{
-        title: "Elevate Your Communications",
+        title: "Enhance Your Communications",
         description:
-          "Ensure all company communications embody our values and maintain consistent messaging. Get AI-powered assistance for crafting professional, on-brand communications across all channels.",
+          "The Media Lab Comms Assistant helps you create and manage effective communications across all channels with intelligent automation and strategic insights.",
       }}
       features={[
         {
-          title: "Content Creation",
+          title: "Content Management",
           items: [
-            "Brand voice guidance",
             "Message templates",
-            "Tone adjustment",
-            "Style consistency checks",
+            "Brand voice guidance",
+            "Content calendar",
+            "Channel optimization",
           ],
         },
         {
-          title: "Communication Tools",
+          title: "Communication Strategy",
           items: [
-            "Email template library",
-            "Presentation frameworks",
-            "Document formatting",
-            "Multi-channel support",
+            "Audience targeting",
+            "Message timing",
+            "Channel selection",
+            "Impact measurement",
           ],
         },
         {
-          title: "Quality Assurance",
+          title: "Quality Control",
           items: [
-            "Brand compliance check",
-            "Grammar and style review",
-            "Messaging alignment",
-            "Cultural sensitivity check",
+            "Style guide compliance",
+            "Tone consistency",
+            "Grammar checking",
+            "Message effectiveness",
           ],
         },
       ]}
       metrics={{
-        title: "Communication Impact",
-        description: "The Comms Assistant helps achieve:",
+        title: "Key Benefits",
+        description: "Enhance your communications with:",
         items: [
-          "Consistent brand voice",
-          "Professional messaging",
-          "Improved clarity",
-          "Faster content creation",
+          "Consistent messaging",
+          "Improved engagement",
+          "Time efficiency",
+          "Better coordination",
         ],
       }}
       cta={{
-        title: "Start Crafting Better Communications",
-        description: "Access professional communication support",
-        buttonText: "Launch Assistant",
-        buttonLink:
-          "https://chatgpt.com/g/g-673611302c588190b6de270123f33cd3-medialab-comms-bot",
+        title: "Start Using the Comms Assistant Today",
+        description: "Available now for all Medialab team members",
+        buttonText: "Access Assistant",
+        buttonLink: "https://chatgpt.com/g/g-comms-assistant",
       }}
       supportTeam={[
-        "Aidan King",
+        "Adam King",
         "Cerys Hayes",
         "Henry Brown",
-        "Cheyanne Joni Morris",
+        "Chryanmayni Ponniah",
         "Ben",
       ]}
     />

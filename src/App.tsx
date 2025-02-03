@@ -21,10 +21,20 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuth();
 
   if (!isAuthenticated) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/login" replace />;
   }
 
   return <>{children}</>;
+}
+
+function LoginRoute() {
+  const { isAuthenticated } = useAuth();
+
+  if (isAuthenticated) {
+    return <Navigate to="/" replace />;
+  }
+
+  return <Login />;
 }
 
 function App() {
@@ -32,56 +42,122 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <Layout />
-              </ProtectedRoute>
-            }
-          >
-            <Route index element={<Home />} />
+          <Route path="/login" element={<LoginRoute />} />
+          <Route element={<Layout />}>
+            <Route
+              index
+              element={
+                <ProtectedRoute>
+                  <Home />
+                </ProtectedRoute>
+              }
+            />
             <Route
               path="tools/digital-setup-wizard"
-              element={<DigitalSetupWizard />}
+              element={
+                <ProtectedRoute>
+                  <DigitalSetupWizard />
+                </ProtectedRoute>
+              }
             />
             <Route
               path="tools/marketing-effectiveness-bot"
-              element={<MarketingEffectivenessBot />}
+              element={
+                <ProtectedRoute>
+                  <MarketingEffectivenessBot />
+                </ProtectedRoute>
+              }
             />
             <Route
               path="tools/channel4-insider"
-              element={<Channel4Insider />}
+              element={
+                <ProtectedRoute>
+                  <Channel4Insider />
+                </ProtectedRoute>
+              }
             />
-            <Route path="tools/hr-faq-bot" element={<HRFAQBot />} />
+            <Route
+              path="tools/hr-faq-bot"
+              element={
+                <ProtectedRoute>
+                  <HRFAQBot />
+                </ProtectedRoute>
+              }
+            />
             <Route
               path="tools/print-delivery-manager"
-              element={<PrintDeliveryManager />}
+              element={
+                <ProtectedRoute>
+                  <PrintDeliveryManager />
+                </ProtectedRoute>
+              }
             />
             <Route
               path="tools/finance-sheet-converter"
-              element={<FinanceSheetConverter />}
+              element={
+                <ProtectedRoute>
+                  <FinanceSheetConverter />
+                </ProtectedRoute>
+              }
             />
             <Route
               path="tools/weekly-report-chatbot"
-              element={<WeeklyReportChatbot />}
+              element={
+                <ProtectedRoute>
+                  <WeeklyReportChatbot />
+                </ProtectedRoute>
+              }
             />
-            <Route path="tools/janus-helpdesk" element={<JanusHelpdesk />} />
+            <Route
+              path="tools/janus-helpdesk"
+              element={
+                <ProtectedRoute>
+                  <JanusHelpdesk />
+                </ProtectedRoute>
+              }
+            />
             <Route
               path="tools/planning-assistant"
-              element={<PlanningAssistant />}
+              element={
+                <ProtectedRoute>
+                  <PlanningAssistant />
+                </ProtectedRoute>
+              }
             />
-            <Route path="tools/pitch-bank" element={<PitchBank />} />
+            <Route
+              path="tools/pitch-bank"
+              element={
+                <ProtectedRoute>
+                  <PitchBank />
+                </ProtectedRoute>
+              }
+            />
             <Route
               path="tools/medialab-comms-assistant"
-              element={<MedialabCommsAssistant />}
+              element={
+                <ProtectedRoute>
+                  <MedialabCommsAssistant />
+                </ProtectedRoute>
+              }
             />
             <Route
               path="tools/recruitment-assistant"
-              element={<RecruitmentAssistant />}
+              element={
+                <ProtectedRoute>
+                  <RecruitmentAssistant />
+                </ProtectedRoute>
+              }
             />
           </Route>
+          {/* Catch any other routes and redirect to home if authenticated, login if not */}
+          <Route
+            path="*"
+            element={
+              <ProtectedRoute>
+                <Navigate to="/" replace />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
