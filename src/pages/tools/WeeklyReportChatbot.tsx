@@ -58,10 +58,11 @@ export function WeeklyReportChatbot() {
         beta: true,
       }}
       supportTeam={[
-        "Ben Cunnington",
-        "Aneena Morshed",
-        "Krishan Majithia",
-        "Charles Batchelor",
+        "Oksana Petychuk",
+        "Joe Slade",
+        "Chiara Bossell",
+        "Maya Ward",
+        "David Ruddle",
       ]}
     />
   );
