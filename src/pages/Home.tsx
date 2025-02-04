@@ -48,9 +48,9 @@ export function Home() {
       link: "/tools/weekly-report-chatbot",
     },
     {
-      title: "Janus Helpdesk",
+      title: "Janus Taxonomy Training Bot",
       description:
-        "AI-powered assistant for IT support and system access. Get instant help with technical issues and access requests.",
+        "Your AI-powered guide for mastering the Janus platform and Apollo processes. Navigate taxonomy creation and data submission workflows.",
       link: "/tools/janus-helpdesk",
     },
     {

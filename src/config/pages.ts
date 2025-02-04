@@ -29,7 +29,7 @@ export const pages = [
   },
   {
     path: '/tools/janus-helpdesk',
-    title: 'Janus Helpdesk'
+    title: 'Janus Taxonomy Training Bot'
   },
   {
     path: '/tools/planning-assistant',

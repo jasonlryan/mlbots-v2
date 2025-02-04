@@ -3,59 +3,67 @@ import { ToolPage } from "../../components/shared/ToolPage";
 export function JanusHelpdesk() {
   return (
     <ToolPage
-      title="Janus Helpdesk"
-      subtitle="AI-powered assistant for IT support and system access"
+      title="Janus Taxonomy Training Bot"
+      subtitle="Your AI-powered guide for mastering the Janus platform and Apollo processes"
       intro={{
-        title: "Instant IT Support Access",
+        title: "Transform Your Janus Experience",
         description:
-          "Get immediate assistance with technical issues, system access requests, and IT-related queries. Our AI-powered helpdesk provides quick solutions and seamless support escalation when needed.",
+          "The Janus Taxonomy Training Bot is your dedicated assistant for navigating the Janus platform, ensuring accurate data submission, and streamlining your workflow within the Apollo ecosystem. From taxonomy creation to troubleshooting, we're here to help you succeed.",
       }}
       features={[
         {
-          title: "Technical Support",
+          title: "Taxonomy Management",
           items: [
-            "Common issue resolution",
-            "System troubleshooting",
-            "Software installation guidance",
-            "Network connectivity support",
+            "Step-by-step creation guidance",
+            "Hierarchy level structuring",
+            "Naming convention support",
+            "Entity ID validation",
           ],
         },
         {
-          title: "Access Management",
+          title: "Data Submission Support",
           items: [
-            "System access requests",
-            "Password reset assistance",
-            "Permission management",
-            "Account setup support",
+            "Forecasting data guidance",
+            "TV clock management",
+            "Offline actuals entry",
+            "CPT recording assistance",
           ],
         },
         {
-          title: "Resource Center",
+          title: "Error Resolution",
           items: [
-            "IT documentation library",
-            "Setup guides & tutorials",
-            "Best practice resources",
-            "Security guidelines",
+            "Real-time troubleshooting",
+            "Error message interpretation",
+            "Schema validation support",
+            "Process optimization tips",
           ],
         },
       ]}
       metrics={{
-        title: "Support Excellence",
-        description: "The Janus Helpdesk delivers:",
+        title: "Key Benefits",
+        description: "Enhance your Janus workflow with:",
         items: [
+          "Accelerated onboarding and training process",
+          "Reduced manual errors in data submission",
+          "Streamlined taxonomy creation",
           "Faster issue resolution",
-          "24/7 support availability",
-          "Reduced downtime",
-          "Improved user satisfaction",
         ],
       }}
       cta={{
-        title: "Get IT Support Now",
-        description: "Access instant IT assistance",
-        buttonText: "Contact Helpdesk",
-        buttonLink: "https://chatgpt.com/g/g-mLDzclrP5-janus-helpdesk",
+        title: "Coming January 2025",
+        description:
+          "Currently in MVP stage - Help desk functionality now operational",
+        buttonText: "Join Early Access",
+        buttonLink: "https://chatgpt.com/g/g-taxonomy-training",
+        beta: true,
       }}
-      supportTeam={["Richard Wallace", "David Tsang", "Charles Batchelor"]}
+      supportTeam={[
+        "Mollie Craig",
+        "Anannya Kumarvel",
+        "Michael Furness",
+        "Sophie Lau",
+        "Jadwiga Sokoli",
+      ]}
     />
   );
 }
