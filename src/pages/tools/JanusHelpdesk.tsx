@@ -3,12 +3,12 @@ import { ToolPage } from "../../components/shared/ToolPage";
 export function JanusHelpdesk() {
   return (
     <ToolPage
-      title="Janus Taxonomy Training Bot"
-      subtitle="Your AI-powered guide for mastering the Janus platform and Apollo processes"
+      title="Janus Helpdesk"
+      subtitle="Your AI-powered assistant for Janus platform support and guidance"
       intro={{
-        title: "A dedicated Assistant",
+        title: "Transform Your Janus Experience",
         description:
-          "The Janus Taxonomy Training Bot is your dedicated assistant for navigating the Janus platform, ensuring accurate data submission, and streamlining your workflow within the Apollo ecosystem. From taxonomy creation to troubleshooting, we're here to help you succeed.",
+          "The Janus Helpdesk is your dedicated AI assistant for navigating the Janus platform. Get instant support for data submission, taxonomy management, and workflow optimization within the Apollo ecosystem.",
       }}
       features={[
         {
@@ -40,22 +40,20 @@ export function JanusHelpdesk() {
         },
       ]}
       metrics={{
-        title: "Key Benefits",
-        description: "Enhance your Janus workflow with:",
+        title: "Driving Results",
+        description: "The Janus Helpdesk is designed to improve:",
         items: [
-          "Accelerated onboarding and training process",
-          "Reduced manual errors in data submission",
+          "Accelerated onboarding and training",
+          "Reduced data submission errors",
           "Streamlined taxonomy creation",
           "Faster issue resolution",
         ],
       }}
       cta={{
-        title: "Coming January 2025",
-        description:
-          "Currently in MVP stage - Help desk functionality now operational",
-        buttonText: "Join Early Access",
+        title: "Start Using the Janus Helpdesk Today",
+        description: "Available now for all Medialab team members",
+        buttonText: "Access Helpdesk",
         buttonLink: "https://chatgpt.com/g/g-taxonomy-training",
-        beta: true,
       }}
       supportTeam={[
         "Mollie Craig",
