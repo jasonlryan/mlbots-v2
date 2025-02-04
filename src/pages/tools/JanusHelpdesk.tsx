@@ -6,7 +6,7 @@ export function JanusHelpdesk() {
       title="Janus Taxonomy Training Bot"
       subtitle="Your AI-powered guide for mastering the Janus platform and Apollo processes"
       intro={{
-        title: "Transform Your Janus Experience",
+        title: "A dedicated Assistant",
         description:
           "The Janus Taxonomy Training Bot is your dedicated assistant for navigating the Janus platform, ensuring accurate data submission, and streamlining your workflow within the Apollo ecosystem. From taxonomy creation to troubleshooting, we're here to help you succeed.",
       }}
