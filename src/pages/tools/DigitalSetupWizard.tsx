@@ -8,7 +8,7 @@ export function DigitalSetupWizard() {
       intro={{
         title: "Transform Your Campaign Setup Process",
         description:
-          "The Digital Setup Wizard is your dedicated AI assistant, designed specifically for Medialab's Meta advertising workflows. It streamlines campaign setup, ensures best practices, and provides instant support when you need it most.",
+          "The Digital Setup Wizard is a dedicated AI assistant, designed specifically for Medialab's Meta advertising workflows. It streamlines campaign setup, ensures best practices, and provides instant support when you need it most.",
       }}
       features={[
         {
