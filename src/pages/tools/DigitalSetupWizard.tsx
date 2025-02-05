@@ -4,7 +4,7 @@ export function DigitalSetupWizard() {
   return (
     <ToolPage
       title="Digital Setup Wizard"
-      subtitle="Your AI-powered assistant for flawless Meta campaign setup and optimisation"
+      subtitle="Your AI-powered assistant for Meta campaign setup and optimisation"
       intro={{
         title: "Transform Your Campaign Setup Process",
         description:
