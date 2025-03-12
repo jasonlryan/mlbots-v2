@@ -53,7 +53,7 @@ export function JanusHelpdesk() {
         title: "Start Using the Janus Helpdesk Today",
         description: "Available now for all Medialab team members",
         buttonText: "Access Helpdesk",
-        buttonLink: "https://chatgpt.com/g/g-taxonomy-training",
+        buttonLink: "https://chatgpt.com/g/g-mLDzclrP5-janus-helpdesk",
       }}
       supportTeam={[
         "Mollie Craig",
