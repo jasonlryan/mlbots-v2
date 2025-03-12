@@ -1,19 +1,20 @@
 import React from "react";
 import { ToolPage } from "../../components/shared/ToolPage";
 
-// Custom email button component with direct onclick handler
+// Using a direct mailto link without JavaScript handling
 const EmailButton = () => {
-  const handleEmailClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const emailAddress = "joe@medialab.co";
-    const subject = "Weekly Report Chatbot Access Request";
-    const body =
-      "Hi Joe,%0A%0AI'd like to request access to the Weekly Report Chatbot tool.%0A%0AThanks!";
-    window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
-  };
+  const emailAddress = "joe@medialab.co";
+  const subject = "Weekly Report Chatbot Access Request";
+  const body =
+    "Hi Joe,%0A%0AI'd like to request access to the Weekly Report Chatbot tool.%0A%0AThanks!";
+  const mailtoLink = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
 
   return (
-    <a href="#" className="cta-button" onClick={handleEmailClick}>
+    <a
+      href={mailtoLink}
+      className="cta-button"
+      style={{ display: "inline-block", textDecoration: "none" }}
+    >
       Send Email Request
     </a>
   );
