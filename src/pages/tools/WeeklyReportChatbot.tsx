@@ -1,5 +1,6 @@
 import { ToolPage } from "../../components/shared/ToolPage";
 
+// URGENT FIX: Force redeployment on Vercel - Updated March 12, 2024
 export function WeeklyReportChatbot() {
   return (
     <ToolPage
@@ -50,10 +51,11 @@ export function WeeklyReportChatbot() {
         ],
       }}
       cta={{
-        title: "Join the DataGPT Project",
-        description: "We're currently testing this tool across Medialab teams",
-        buttonText: "Request Access",
-        buttonLink: "mailto:joe.slade@medialabgroup.co.uk",
+        title: "Email Joe for Access",
+        description: "Click the button below to send an email request",
+        buttonText: "Send Email Request",
+        buttonLink:
+          "mailto:joe.slade@medialabgroup.co.uk?subject=Weekly%20Report%20Chatbot%20Access%20Request&body=Hi%20Joe%2C%0A%0AI'd%20like%20to%20request%20access%20to%20the%20Weekly%20Report%20Chatbot.%0A%0AThanks!",
         beta: true,
       }}
       supportTeam={[
