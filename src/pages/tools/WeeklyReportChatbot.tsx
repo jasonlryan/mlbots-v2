@@ -1,19 +1,12 @@
 import React from "react";
 import { ToolPage } from "../../components/shared/ToolPage";
 
-// Using a direct mailto link without JavaScript handling
+// URGENT FIX: Using a simple direct HTML anchor tag with mailto link
 const EmailButton = () => {
-  const emailAddress = "joe@medialab.co";
-  const subject = "Weekly Report Chatbot Access Request";
-  const body =
-    "Hi Joe,%0A%0AI'd like to request access to the Weekly Report Chatbot tool.%0A%0AThanks!";
-  const mailtoLink = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
-
   return (
     <a
-      href={mailtoLink}
+      href="mailto:joe.slade@medialabgroup.co.uk?subject=Weekly%20Report%20Chatbot%20Access%20Request&body=Hi%20Joe%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Weekly%20Report%20Chatbot%20tool.%0A%0AThanks!"
       className="cta-button"
-      style={{ display: "inline-block", textDecoration: "none" }}
     >
       Send Email Request
     </a>
@@ -66,14 +59,14 @@ export default function WeeklyReportChatbot() {
         ],
       }}
       cta={{
-        title: "Email Joe for Access",
+        title: "Request Access",
         description:
           "Send an email request to get access to the Weekly Report Chatbot",
         buttonText: "Send Email Request",
         buttonLink: "#",
         customButton: <EmailButton />,
       }}
-      supportTeam={["Joe Smith", "Sarah Johnson"]}
+      supportTeam={["Joe Slade", "Sarah Johnson"]}
     />
   );
 }
