@@ -50,9 +50,8 @@ export function WeeklyReportChatbot() {
         ],
       }}
       cta={{
-        title: "Join the DataGPT Hero Project",
-        description:
-          "We're actively scaling and testing this tool across Medialab teams",
+        title: "Join the DataGPT Project",
+        description: "We're currently testing this tool across Medialab teams",
         buttonText: "Request Access",
         buttonLink: "mailto:joe.slade@medialabgroup.co.uk",
         beta: true,

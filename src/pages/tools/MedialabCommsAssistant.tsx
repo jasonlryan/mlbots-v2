@@ -1,6 +1,5 @@
 import { ToolPage } from "../../components/shared/ToolPage";
 
-// Force redeployment on Vercel
 export function MedialabCommsAssistant() {
   return (
     <ToolPage
@@ -53,7 +52,7 @@ export function MedialabCommsAssistant() {
       cta={{
         title: "Start Using the Comms Assistant Today",
         description: "Available now for all Medialab team members",
-        buttonText: "Access Assistant",
+        buttonText: "Access Comms Assistant",
         buttonLink:
           "https://chatgpt.com/g/g-673611302c588190b6de270123f33cd3-medialab-comms-bot",
       }}
