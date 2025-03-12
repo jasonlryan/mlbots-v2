@@ -22,6 +22,7 @@ interface ToolPageProps {
     buttonText: string;
     buttonLink: string;
     beta?: boolean;
+    customButton?: React.ReactNode;
   };
   supportTeam?: string[];
 }
@@ -93,14 +94,18 @@ export function ToolPage({
             )}
             <h2>{cta.title}</h2>
             <p>{cta.description}</p>
-            <a
-              href={cta.buttonLink}
-              className="cta-button"
-              onClick={(e) => handleExternalLink(e, cta.buttonLink)}
-              rel="noopener noreferrer"
-            >
-              {cta.buttonText}
-            </a>
+            {cta.customButton ? (
+              cta.customButton
+            ) : (
+              <a
+                href={cta.buttonLink}
+                className="cta-button"
+                onClick={(e) => handleExternalLink(e, cta.buttonLink)}
+                rel="noopener noreferrer"
+              >
+                {cta.buttonText}
+              </a>
+            )}
           </section>
         </div>
 
