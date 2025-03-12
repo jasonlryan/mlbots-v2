@@ -10,7 +10,7 @@ import { Channel4Insider } from "./pages/tools/Channel4Insider";
 import { HRFAQBot } from "./pages/tools/HRFAQBot";
 import { PrintDeliveryManager } from "./pages/tools/PrintDeliveryManager";
 import { FinanceSheetConverter } from "./pages/tools/FinanceSheetConverter";
-import { WeeklyReportChatbot } from "./pages/tools/WeeklyReportChatbot";
+import WeeklyReportChatbot from "./pages/tools/WeeklyReportChatbot";
 import { JanusHelpdesk } from "./pages/tools/JanusHelpdesk";
 import { PlanningAssistant } from "./pages/tools/PlanningAssistant";
 import { PitchBank } from "./pages/tools/PitchBank";
