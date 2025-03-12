@@ -35,6 +35,21 @@ export function ToolPage({
   cta,
   supportTeam,
 }: ToolPageProps) {
+  // Function to handle external link clicks
+  const handleExternalLink = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    url: string
+  ) => {
+    e.preventDefault();
+    // If it's an email link, use the default behavior
+    if (url.startsWith("mailto:")) {
+      window.location.href = url;
+    } else {
+      // For all other external links, use window.open
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <>
       <div className="hero">
@@ -81,7 +96,7 @@ export function ToolPage({
             <a
               href={cta.buttonLink}
               className="cta-button"
-              target="_blank"
+              onClick={(e) => handleExternalLink(e, cta.buttonLink)}
               rel="noopener noreferrer"
             >
               {cta.buttonText}

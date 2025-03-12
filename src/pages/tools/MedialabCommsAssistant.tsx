@@ -53,7 +53,8 @@ export function MedialabCommsAssistant() {
         title: "Start Using the Comms Assistant Today",
         description: "Available now for all Medialab team members",
         buttonText: "Access Assistant",
-        buttonLink: "https://chatgpt.com/g/g-comms-assistant",
+        buttonLink:
+          "https://chatgpt.com/g/g-673611302c588190b6de270123f33cd3-medialab-comms-bot",
       }}
       supportTeam={[
         "Adam King",
