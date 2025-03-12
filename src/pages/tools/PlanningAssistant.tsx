@@ -1,5 +1,6 @@
 import { ToolPage } from "../../components/shared/ToolPage";
 
+// Force redeployment on Vercel
 export function PlanningAssistant() {
   return (
     <ToolPage
@@ -50,7 +51,7 @@ export function PlanningAssistant() {
         ],
       }}
       cta={{
-        title: "Start Using the Planning Assistant Today",
+        title: "Start Using the Planning Assistant Now",
         description: "Available now for all Medialab team members",
         buttonText: "Access Assistant",
         buttonLink:

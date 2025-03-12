@@ -1,5 +1,6 @@
 import { ToolPage } from "../../components/shared/ToolPage";
 
+// Force redeployment on Vercel
 export function MedialabCommsAssistant() {
   return (
     <ToolPage
