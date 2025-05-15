@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# Medialab AI Tools Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A centralized hub for Medialab's AI-powered tools and assistants, designed to enhance productivity and streamline workflows across departments.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Medialab AI Tools Hub provides a modern, user-friendly interface for accessing various AI tools developed for Medialab. Each tool is designed to solve specific challenges within the organization, from marketing effectiveness to campaign planning and recruitment assistance.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Clean, Modern UI**: Built with React, TypeScript, and Vite for a fast, responsive experience
+- **Centralized Access**: Single access point for all Medialab AI tools
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **Tool Documentation**: Each tool includes detailed information about its features, benefits, and usage
 
-- Configure the top-level `parserOptions` property like this:
+## Available Tools
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Digital Setup Wizard**: AI-powered assistant for Meta campaign setup and optimization
+- **Marketing Effectiveness Bot**: Guide to marketing measurement, MMM, and marketing effectiveness concepts
+- **Channel 4 Insider**: Tailored, role-specific insights spanning programming, audience insight, and commercial opportunities
+- **HR FAQ Bot**: Quick answers to common HR and policy questions
+- **Print Delivery Manager**: Streamline print campaign delivery workflows
+- **Weekly Report Chatbot**: AI assistant for creating comprehensive weekly reports
+- **Janus Helpdesk**: Support for Janus taxonomy and classifications
+- **Planning Assistant**: AI-powered assistant for media planning and strategy
+- **Medialab Comms Assistant**: Support for internal and external communications
+- **Recruitment Assistant**: AI support for streamlining the hiring process
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Development
+
+This project uses:
+
+- React
+- TypeScript
+- Vite
+- CSS for styling (with CSS variables for theming)
+
+## Deployment
+
+The site is deployed on Vercel for automatic builds and deployments.
+
+## Support
+
+For any issues or questions, please contact the relevant support team members listed on each tool's page.
