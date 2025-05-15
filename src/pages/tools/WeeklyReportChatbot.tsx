@@ -1,4 +1,3 @@
-import React from "react";
 import { ToolPage } from "../../components/shared/ToolPage";
 
 // Removed custom EmailButton component and using the standard CTA approach
