@@ -1,19 +1,7 @@
 import React from "react";
 import { ToolPage } from "../../components/shared/ToolPage";
 
-// URGENT FIX: Using a simple direct HTML anchor tag with mailto link
-const EmailButton = () => {
-  return (
-    <a
-      href="mailto:joe.slade@medialabgroup.co.uk?subject=Weekly%20Report%20Chatbot%20Access%20Request&body=Hi%20Joe%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Weekly%20Report%20Chatbot%20tool.%0A%0AThanks!"
-      className="cta-button"
-    >
-      Send Email Request
-    </a>
-  );
-};
-
-// URGENT FIX: Redeploying on Vercel with explicit mailto handling
+// Removed custom EmailButton component and using the standard CTA approach
 export default function WeeklyReportChatbot() {
   return (
     <ToolPage
@@ -63,8 +51,8 @@ export default function WeeklyReportChatbot() {
         description:
           "Send an email request to get access to the Weekly Report Chatbot",
         buttonText: "Send Email Request",
-        buttonLink: "#",
-        customButton: <EmailButton />,
+        buttonLink:
+          "mailto:joe.slade@medialabgroup.co.uk?subject=Weekly%20Report%20Chatbot%20Access%20Request&body=Hi%20Joe%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Weekly%20Report%20Chatbot%20tool.%0A%0AThanks!",
       }}
       supportTeam={["Joe Slade", "Sarah Johnson"]}
     />

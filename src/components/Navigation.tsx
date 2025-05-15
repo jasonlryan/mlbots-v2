@@ -31,12 +31,6 @@ export const Navigation: React.FC<NavigationProps> = ({ pages }) => {
               className="nav-logo"
             />
           </Link>
-          {isToolPage && (
-            <Link to="/" className="nav-index">
-              <span className="hamburger">≡</span>
-              Tools Index
-            </Link>
-          )}
         </div>
 
         {isToolPage && (

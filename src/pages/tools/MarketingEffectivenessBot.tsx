@@ -8,7 +8,7 @@ export function MarketingEffectivenessBot() {
       intro={{
         title: "Simplify Complex Marketing Concepts",
         description:
-          "The Marketing Effectiveness Training Bot is your dedicated learning companion, designed to help you understand and apply advanced marketing measurement concepts. Whether you're new to Marketing Mix Modeling or looking to deepen your knowledge of Apollo processes, this AI assistant makes complex topics accessible and actionable.",
+          "The Marketing Effectiveness Training Bot is your dedicated learning companion, designed to help you understand advanced marketing measurement concepts. Whether you're new to Marketing Mix Modeling or looking to deepen your knowledge of Apollo processes, this AI assistant makes complex topics accessible and actionable.",
       }}
       features={[
         {
@@ -33,7 +33,6 @@ export function MarketingEffectivenessBot() {
           title: "Professional Development",
           items: [
             "Continuous learning resources",
-            "Apollo process training",
             "Best practice documentation",
             "Knowledge sharing platform",
           ],
@@ -45,7 +44,6 @@ export function MarketingEffectivenessBot() {
         items: [
           "Deep understanding of marketing measurement principles",
           "Confidence in interpreting complex data models",
-          "Mastery of Apollo processes and methodologies",
           "Enhanced client communication skills",
         ],
       }}
@@ -60,7 +58,6 @@ export function MarketingEffectivenessBot() {
         "Joe Slade",
         "Noel McGarrell",
         "Farid Hamid",
-        "Nicole Young",
         "Adam Cunnington",
       ]}
     />

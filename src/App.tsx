@@ -9,11 +9,9 @@ import { MarketingEffectivenessBot } from "./pages/tools/MarketingEffectivenessB
 import { Channel4Insider } from "./pages/tools/Channel4Insider";
 import { HRFAQBot } from "./pages/tools/HRFAQBot";
 import { PrintDeliveryManager } from "./pages/tools/PrintDeliveryManager";
-import { FinanceSheetConverter } from "./pages/tools/FinanceSheetConverter";
 import WeeklyReportChatbot from "./pages/tools/WeeklyReportChatbot";
 import { JanusHelpdesk } from "./pages/tools/JanusHelpdesk";
 import { PlanningAssistant } from "./pages/tools/PlanningAssistant";
-import { PitchBank } from "./pages/tools/PitchBank";
 import { MedialabCommsAssistant } from "./pages/tools/MedialabCommsAssistant";
 import { RecruitmentAssistant } from "./pages/tools/RecruitmentAssistant";
 
@@ -93,14 +91,6 @@ function App() {
               }
             />
             <Route
-              path="tools/finance-sheet-converter"
-              element={
-                <ProtectedRoute>
-                  <FinanceSheetConverter />
-                </ProtectedRoute>
-              }
-            />
-            <Route
               path="tools/weekly-report-chatbot"
               element={
                 <ProtectedRoute>
@@ -121,14 +111,6 @@ function App() {
               element={
                 <ProtectedRoute>
                   <PlanningAssistant />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="tools/pitch-bank"
-              element={
-                <ProtectedRoute>
-                  <PitchBank />
                 </ProtectedRoute>
               }
             />

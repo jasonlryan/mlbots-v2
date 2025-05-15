@@ -20,24 +20,16 @@ export const pages = [
     title: 'Print Delivery Manager'
   },
   {
-    path: '/tools/finance-sheet-converter',
-    title: 'Finance Sheet Converter'
-  },
-  {
     path: '/tools/weekly-report-chatbot',
     title: 'Weekly Report Chatbot'
   },
   {
     path: '/tools/janus-helpdesk',
-    title: 'Janus Taxonomy Training Bot'
+    title: 'Janus Helpdesk'
   },
   {
     path: '/tools/planning-assistant',
     title: 'Planning Assistant'
-  },
-  {
-    path: '/tools/pitch-bank',
-    title: 'Pitch Bank'
   },
   {
     path: '/tools/medialab-comms-assistant',

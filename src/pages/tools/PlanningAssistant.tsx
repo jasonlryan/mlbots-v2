@@ -17,7 +17,7 @@ export function PlanningAssistant() {
           items: [
             "Campaign planning assistance",
             "Strategic recommendations",
-            "Budget allocation",
+            "Interrogating client briefs",
             "Timeline management",
           ],
         },

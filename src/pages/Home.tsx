@@ -14,13 +14,13 @@ export function Home() {
     {
       title: "Marketing Effectiveness Bot",
       description:
-        "Analyse campaign performance and get AI-driven insights for optimisation and improvement.",
+        "Your AI-powered companion for mastering marketing effectiveness—simplifying measurement, demystifying Apollo, and turning complex insights into actionable learning.",
       link: "/tools/marketing-effectiveness-bot",
     },
     {
       title: "Channel 4 Insider",
       description:
-        "Your AI-powered expert for Channel 4 media opportunities and insights. Get tailored recommendations and up-to-date information.",
+        "Channel 4 Insider delivers tailored, role-specific insights—spanning programming, audience insight and commerical opportunities.",
       link: "/tools/channel4-insider",
     },
     {
@@ -36,19 +36,13 @@ export function Home() {
       link: "/tools/print-delivery-manager",
     },
     {
-      title: "Finance Sheet Converter",
-      description:
-        "AI-powered tool for standardising and converting financial documents. Transform complex spreadsheets into consistent formats.",
-      link: "/tools/finance-sheet-converter",
-    },
-    {
       title: "Weekly Report Chatbot",
       description:
         "AI-powered assistant for generating and analysing weekly performance reports. Streamline your reporting workflow with automated insights.",
       link: "/tools/weekly-report-chatbot",
     },
     {
-      title: "Janus Taxonomy Training Bot",
+      title: "Janus Helpdesk",
       description:
         "Your AI-powered guide for mastering the Janus platform and Apollo processes. Navigate taxonomy creation and data submission workflows.",
       link: "/tools/janus-helpdesk",
@@ -58,12 +52,6 @@ export function Home() {
       description:
         "Your AI-powered guide through Medialab's planning framework. Get strategic guidance, resources, and insights at every step.",
       link: "/tools/planning-assistant",
-    },
-    {
-      title: "Pitch Bank",
-      description:
-        "Your AI-powered assistant for efficient pitch content management and retrieval. Access and organise pitch materials, case studies, and strategic insights.",
-      link: "/tools/pitch-bank",
     },
     {
       title: "Medialab Comms Assistant",
