@@ -55,7 +55,7 @@ export function PlanningAssistant() {
         description: "Available now for all Medialab team members",
         buttonText: "Access Assistant",
         buttonLink:
-          "https://chatgpt.com/g/g-6735f92c63fc8190b61098a7afc0c26d-planning-assistant",
+          "https://chatgpt.com/g/g-6735f927cde881908c6d5ee507e71e21-media-planning-assistant",
       }}
       supportTeam={[
         "Jess Talbot",

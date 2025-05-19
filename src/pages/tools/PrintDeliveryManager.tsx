@@ -53,7 +53,7 @@ export function PrintDeliveryManager() {
         title: "Start Using the Print Delivery Manager Today",
         description: "Available January 2025 - Join our early access program",
         buttonText: "Access the Manager",
-        buttonLink: "https://chatgpt.com/g/g-vfXGVlnpb-print-delivery-manager",
+        buttonLink: "https://chatgpt.com/g/g-yZM9QpoKO-print-delivery-manager",
       }}
       supportTeam={[
         "James Taylor",
