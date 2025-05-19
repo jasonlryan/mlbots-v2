@@ -367,7 +367,7 @@ a:hover {
 }
 
 .tool-card h3 {
-  color: var(--primary-color);
+  color: var(--header-color);
   margin: 0 0 1rem 0;
   font-size: 1.25rem;
   font-weight: 600;
