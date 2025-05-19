@@ -53,4 +53,4 @@ The site is deployed on Vercel for automatic builds and deployments.
 
 ## Support
 
-For any issues or questions, please contact the relevant support team members listed on each tool's page.
+For any issues or questions, please contact the support team members listed on each tool's page.
