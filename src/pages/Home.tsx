@@ -30,12 +30,6 @@ export function Home() {
       link: "/tools/hr-faq-bot",
     },
     {
-      title: "Print Delivery Manager",
-      description:
-        "AI-powered assistant for flawless print insert delivery scheduling. Automate and streamline your print delivery workflow.",
-      link: "/tools/print-delivery-manager",
-    },
-    {
       title: "Weekly Report Chatbot",
       description:
         "AI-powered assistant for generating and analysing weekly performance reports. Streamline your reporting workflow with automated insights.",
@@ -45,7 +39,7 @@ export function Home() {
       title: "Janus Helpdesk",
       description:
         "Your AI-powered guide for mastering the Janus platform and Apollo processes. Navigate taxonomy creation and data submission workflows.",
-      link: "/tools/janus-helpdesk",
+      link: "https://chatgpt.com/g/g-mLDzclrP5-janus-helpdesk",
     },
     {
       title: "Planning Assistant",

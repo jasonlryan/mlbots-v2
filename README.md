@@ -19,9 +19,8 @@ The Medialab AI Tools Hub provides a modern, user-friendly interface for accessi
 - **Marketing Effectiveness Bot**: Guide to marketing measurement, MMM, and marketing effectiveness concepts
 - **Channel 4 Insider**: Tailored, role-specific insights spanning programming, audience insight, and commercial opportunities
 - **HR FAQ Bot**: Quick answers to common HR and policy questions
-- **Print Delivery Manager**: Streamline print campaign delivery workflows
 - **Weekly Report Chatbot**: AI assistant for creating comprehensive weekly reports
-- **Janus Helpdesk**: Support for Janus taxonomy and classifications
+- **Janus Helpdesk**: Support for Janus taxonomy and classifications (@https://chatgpt.com/g/g-mLDzclrP5-janus-helpdesk)
 - **Planning Assistant**: AI-powered assistant for media planning and strategy
 - **Medialab Comms Assistant**: Support for internal and external communications
 - **Recruitment Assistant**: AI support for streamlining the hiring process

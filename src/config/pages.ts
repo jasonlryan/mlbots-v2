@@ -16,10 +16,6 @@ export const pages = [
     title: 'HR FAQ Bot'
   },
   {
-    path: '/tools/print-delivery-manager',
-    title: 'Print Delivery Manager'
-  },
-  {
     path: '/tools/weekly-report-chatbot',
     title: 'Weekly Report Chatbot'
   },
