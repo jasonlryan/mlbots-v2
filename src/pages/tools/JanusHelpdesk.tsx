@@ -4,7 +4,7 @@ export function JanusHelpdesk() {
   return (
     <ToolPage
       title="Janus Helpdesk"
-      subtitle="Your AI-powered assistant for Janus platform support and guidance"
+      subtitle="Your assistant for Janus platform support and guidance"
       intro={{
         title: "Transform Your Janus Experience",
         description:

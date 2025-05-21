@@ -44,7 +44,7 @@ export function PrintDeliveryManager() {
         description: "Transform your print delivery workflow with:",
         items: [
           "Significant reduction in manual scheduling time",
-          "Enhanced accuracy in delivery documentation",
+          "Greater accuracy in delivery documentation",
           "Standardised process across all publications",
           "Simplified multi-region delivery coordination",
         ],
