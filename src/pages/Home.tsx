@@ -39,7 +39,7 @@ export function Home() {
       title: "Janus Helpdesk",
       description:
         "Your AI-powered guide for mastering the Janus platform and Apollo processes. Navigate taxonomy creation and data submission workflows.",
-      link: "https://chatgpt.com/g/g-mLDzclrP5-janus-helpdesk",
+      link: "/tools/janus-helpdesk",
     },
     {
       title: "Planning Assistant",
