@@ -1,6 +1,6 @@
 # Medialab AI Tools Hub
 
-A centralized hub for Medialab's AI-powered tools and assistants, designed to enhance productivity and streamline workflows across departments.
+A centralised hub for Medialab's AI-powered tools and assistants, designed to enhance productivity and streamline workflows across departments.
 
 ## Overview
 
